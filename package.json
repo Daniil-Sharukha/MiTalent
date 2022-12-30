@@ -1,0 +1,33 @@
+{
+  "name": "7-mitalent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniil-Sharukha/MitaLent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daniil-Sharukha/MitaLent/issues"
+  },
+  "homepage": "https://github.com/Daniil-Sharukha/MitaLent#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.57.1",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.11",
+    "glob-parent": ">=6.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-rename": "^2.0.0"
+  }
+}
