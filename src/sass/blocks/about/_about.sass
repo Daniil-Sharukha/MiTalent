@@ -2,19 +2,21 @@
     height: 100%
     position: relative
     margin-bottom: 100px
-    &__plug
+    &__img
         position: absolute
-        width: 770px
+        width: 40%
         height: 100%
         // background-color: #e2e8e8
         background-color: #858585
+        object-fit: cover
     &__contact
+        width: 40%
         cursor: pointer
         position: absolute
         bottom: 0
         display: flex
         &__link
-            width: 370px
+            width: 55%
             height: 110px
             background-image: linear-gradient(to top, #b4d3d3, #d9e7e7)
             padding-top: 40px
@@ -29,7 +31,7 @@
                 letter-spacing: 2.8px
                 color: #fff
         &__icon
-            width: 110px
+            width: 25%
             height: 110px
             background-color: #fff
             svg
@@ -38,16 +40,16 @@
                 align-content: center
                 height: 100%
     &__promo
-        width: 880px
+        max-width: 880px
         padding-top: 55px
         margin-left: 41%
     &__logo
-        width: 576px
+        max-width: 576px
         margin: 0 auto
     &__content
         margin: 0 auto
         margin-top: 100px
-        width: 576px
+        max-width: 576px
     &__title
         font-family: 'Poppins', sans-serif
         font-size: 24px
@@ -72,7 +74,7 @@
             margin-bottom: 0
     &__citation
         margin-top: 50px
-        width: 576px
+        max-width: 576px
         height: 268px
         background-color: #1a1a1d
         font-family: 'Playfair Display', serif
@@ -85,3 +87,56 @@
         span
             font-weight: bold
             font-style: italic
+@media ( max-width: 992px )
+    .about
+        &__contact
+            width: 40%
+            &__link
+                height: 80px
+                padding-top: 26px
+            &__icon
+                height: 80px
+@media ( max-width: 768px )
+    .about
+        margin-bottom: 70px
+        &__photo
+            display: none
+        &__promo
+            margin: 0 100px
+        &__content
+            margin-top: 50px
+        &__title
+            font-size: 18px
+            &::first-letter
+                font-size: 60px
+                margin-right: 7px
+                line-height: 70px
+        &__text
+            margin-top: 20px
+        &__citation
+            margin-top: 40px
+            height: 220px
+            padding-top: 60px
+@media ( max-width: 576px )
+    .about
+        &__promo
+            margin: 0 50px
+        &__logo
+            text-align: center
+            a
+                img
+                    width: 85%
+        &__title
+            font-size: 15px
+            line-height: 25px
+            &::first-letter
+                font-size: 50px
+                margin-right: 7px
+                line-height: 50px
+        &__text
+            font-size: 14px
+            line-height: 25px
+        &__citation
+            height: 180px
+            padding-top: 45px
+            font-size: 18px

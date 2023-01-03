@@ -35,3 +35,28 @@
         cursor: pointer
         margin-right: 60px
         line-height: 20px
+        
+@media ( max-width: 992px )
+    .header
+        &__leftSide
+            width: 280px
+            .burger
+                margin-left: 40px
+@media ( max-width: 768px )
+    .header
+        &__leftSide
+            a
+                display: none
+        &__rightSide
+            margin-right: 35px
+@media ( max-width: 576px )
+    .header
+        margin-top: 40px
+        &__leftSide
+            display: block
+            align-self: center
+            .burger
+                margin-left: 20px
+        &__rightSide
+            margin-right: 20px
+

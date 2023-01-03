@@ -1,7 +1,7 @@
 .menu
     margin-bottom: 130px
     &__tabs
-        width: 440px
+        max-width: 440px
         margin: 0 auto
         font-family: 'Nunito Sans', sans-serif
         font-size: 12px
@@ -21,3 +21,18 @@
                     font-size: 70px
                     color: #1a1a1d
                     border-bottom: 2px solid #1a1a1d
+@media ( max-width: 768px )
+    .menu
+        &__tabs
+            margin-bottom: 60px
+@media ( max-width: 768px )
+    .menu
+        margin-bottom: 60px
+@media ( max-width: 576px )
+    .menu
+        &__tabs
+            margin-bottom: 40px
+            font-size: 10px
+            letter-spacing: 1.4px
+            ul
+                justify-content: space-evenly

@@ -9,25 +9,16 @@
 // 	width: 1140px
 // 	margin: 0 auto
 
-.decor
-	position: absolute
-	width: 240px
-	height: 500px
-	background-image: linear-gradient(to top, #b4d3d3, #d9e7e7)
-	right: 0
-	top: 0
-	z-index: 0
-
 svg 
 	width: 20px
 	height: 20px
 
-@import 'blocks/_sidebar'
-@import 'blocks/_header'
-@import 'blocks/_about'
-@import 'blocks/_menu'
-@import 'blocks/_carousel'
-@import 'blocks/_footer'
+@import 'blocks/about/_sidebar'
+@import 'blocks/about/_header'
+@import 'blocks/about/_about'
+@import 'blocks/about/_menu'
+@import 'blocks/about/_carousel'
+@import 'blocks/about/_footer'
 
 
 
@@ -35,3 +26,33 @@ svg
 // font-family: 'Nunito Sans', sans-serif
 // font-family: 'Playfair Display', serif
 // font-family: 'Poppins', sans-serif
+
+// @media ( max-width: 1200px )
+//     .container
+//         max-width: 960px
+
+// @media ( max-width: 992px )
+//     .container
+//         max-width: 720px
+
+// @media ( max-width: 768px )
+//     .container
+//         max-width: 540px
+
+// @media ( max-width: 576px )
+//     .container
+//         width: 100%
+//         padding: 0 10px
+
+.decor
+	position: absolute
+	width: 15%
+	height: 500px
+	background-image: linear-gradient(to top, #b4d3d3, #d9e7e7)
+	right: 0
+	top: 0
+	z-index: -1
+@media ( max-width: 576px )
+	.decor
+		width: 15%
+		height: 400px

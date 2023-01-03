@@ -1,0 +1,79 @@
+.footer
+    width: 100%
+    margin: 0 auto
+    margin-bottom: 40px
+    padding: 0 40px
+    &__logo
+        align-self: center
+    &__top
+        display: flex
+        justify-content: space-between
+    &__newsletter
+        display: flex
+        padding-left: 50px
+        border-left: 2px solid #b4d3d3
+        align-items: center
+    &__signUp
+        a
+            font-family: 'Nunito Sans', sans-serif
+            font-weight: bold
+            line-height: 32px
+            text-transform: uppercase
+            letter-spacing: 2.8px
+            color: #1a1a1d
+            margin-right: 40px
+    &__divider
+        width: 100%
+        border: 1px solid #f5f5f5
+        margin-top: 40px 
+    &__bottom
+        margin-top: 40px
+        display: flex
+        justify-content: space-between
+    &__copyright
+        font-family: 'Nunito Sans', sans-serif
+        font-size: 15px
+        color: #77777e 
+    &__social
+        width: 200px
+        display: flex
+        justify-content: space-between
+        align-items: center
+@media ( max-width: 768px )
+    .footer 
+        &__newsletter
+            border: none
+            text-align: center
+            svg
+                scale: 2
+        &__signUp
+            a
+                margin-right: 10px
+        &__copyright
+            max-width: 45%
+            font-size: 12px
+@media ( max-width: 576px )
+    .footer
+        &__top
+            flex-direction: column
+        &__newsletter
+            padding-left: 0
+            flex-direction: column
+            margin-top: 15px
+            svg
+                display: none
+        &__signUp
+            margin-bottom: 10px
+            display: block
+        &__divider
+            margin-top: 15px
+        &__bottom
+            flex-direction: column-reverse
+        &__social
+            width: 70%
+            margin: 0 auto
+        &__copyright
+            max-width: 100%
+            margin-top: 20px
+            text-align: center
+
