@@ -32,7 +32,6 @@
         display: grid
         grid-template-columns: repeat(4, 1fr)
     &__item
-        width: 420px
         height: 490px
         position: relative
         background-color: #000
@@ -87,3 +86,37 @@
             text-align: center
             color: #aeaeb7
             text-transform: uppercase
+@media ( max-width: 1200px )
+    .table
+        padding: 0 50px
+        &__item
+            height: 350px
+@media ( max-width: 992px )
+    .table
+        &__item
+            &-name
+                font-size: 20px
+@media ( max-width: 768px )
+    .table
+        margin-bottom: 80px
+        &__header
+            margin-bottom: 30px
+            flex-direction: column
+        &__tabs
+            ul
+                width: 100%
+                margin-bottom: 0
+        &__switch
+            display: none
+        &__wrapper
+            grid-template-columns: repeat(2, 1fr)
+@media ( max-width: 576px )
+    .table
+        &__tabs
+            ul
+                flex-wrap: wrap
+        &__tab
+            font-size: 24px
+            margin: 5px 0
+        &__wrapper
+            grid-template-columns: repeat(1, 1fr)

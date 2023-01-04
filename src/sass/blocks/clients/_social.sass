@@ -1,10 +1,10 @@
 .social
     position: relative
     height: 1080px
-    margin-bottom: 200px
+    margin-bottom: 100px
     &__photo
         position: absolute
-        width: 1440px
+        width: 75%
         height: 720px
         background-color: #e2e8e8
         top: 0
@@ -42,8 +42,8 @@
         left: 0
         bottom: 0
     &__content
-        padding-left: 240px
-        padding-top: 360px
+        padding-left: 10%
+        padding-top: 300px
     &__text
         width: 650px
         position: relative
@@ -71,11 +71,11 @@
         color: #1a1a1d
         text-transform: uppercase
     &__subtext
-        max-width: 1170px
+        width: 72%
         display: flex
         justify-content: space-between
     &__switch
-        width: 100px
+        width: 10%
         display: flex
         justify-content: space-between
         &-left
@@ -86,12 +86,12 @@
             cursor: pointer
     &__tweet
         display: flex
-        justify-content: space-between
-        width: 930px
+        justify-content: space-around
+        width: 85%
         &-text
-            width: 565px
+            width: 60%
             font-family: 'Playfair Display', sans-serif
-            font-size: 30px
+            font-size: 28px
             line-height: 46px
             letter-spacing: -1.2px
             color: #73737b
@@ -110,7 +110,7 @@
             &:hover
                 text-decoration: none
         &-profile
-            width: 260px
+            width: 32%
             height: 80px
             display: flex
             justify-content: space-around
@@ -131,7 +131,105 @@
                 color: #92bcbd
                 &:hover
                     text-decoration: none
-
-
+@media ( max-width: 1200px )
+    .social
+        height: 930px
+        margin-bottom: 50px
+        &__content
+            padding-top: 300px
+            width: 85%
+            margin: 0 auto
+            padding-left: 0
+        &__text
+            width: 50%
+            margin-bottom: 120px
+            &-line
+                right: 0
+        &__title
+            font-size: 70px
+            line-height: 70px
+        &__photo
+            width: 70%
+            height: 600px
+        &__links
+            &__block
+                display: none
+        &__mini
+            display: none
+        &__subtext
+            margin: 0 auto
+            width: 100%
+            flex-direction: column-reverse
+            position: relative
+        &__switch
+            position: absolute
+            top: 20px
+            left: 23%
+            width: 50%
+            margin: 0 auto
+        &__tweet
+            width: 100%
+            align-items: center
+            flex-direction: column-reverse
+            &-profile
+                width: 40%
+                margin-bottom: 20px
+            &-text
+                width: 90%
+                text-align: center
+        &__decor
+            height: 330px
+@media ( max-width: 992px )
+    .social
+        &__photo
+            width: 60%
+            height: 500px
+        &__title
+            font-size: 50px
+            line-height: 60px
+            margin-bottom: 10px
+        &__text
+            margin-bottom: 100px
+@media ( max-width: 768px )
+    .social
+        height: auto
+        margin-bottom: 100px
+        &__photo
+            height: 400px
+        &__content
+            width: 80%
+            padding-top: 200px
+        &__switch
+            top: 25px
+            left: 13%
+            width: 75%
+        &__tweet
+            &-profile
+                width: 60%
+            &-text
+                font-size: 22px
+                letter-spacing: 0
+                line-height: 35px
+@media ( max-width: 576px )
+    .social
+        margin-bottom: 60px
+        &__text
+            margin-bottom: 80px
+            &-line
+                display: none
+        &__photo
+            height: 300px
+        &__content
+            padding-top: 150px
+        &__subtitle
+            font-size: 12px
+        &__switch
+            display: none
+        &__tweet
+            &-profile
+                width: 100%
+            &-text
+                font-size: 15px
+                text-align: justify
 
 

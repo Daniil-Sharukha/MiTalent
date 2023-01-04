@@ -19,7 +19,6 @@
         grid-template-columns: repeat(3, 1fr)
         gap: 50px
     &-item
-        width: 520px
         display: flex
         justify-content: space-between
         cursor: pointer
@@ -32,7 +31,7 @@
             .news__preview-item-play
                 display: block
         &-left
-            width: 200px
+            width: 45%
             height: 140px
             background-color: #e2e8e8
             transition: 0.3s all
@@ -43,11 +42,11 @@
             svg
                 fill: #fff
         &-right
-            width: 280px
+            width: 50%
             height: 140px
         &-title
             font-family: 'Poppins', sans-serif
-            font-size: 24px
+            font-size: 17px
             font-weight: 500
             line-height: 30px
             color: #1a1a1d
@@ -58,3 +57,55 @@
             font-size: 16px
             line-height: 16px
             color: #77777e
+@media ( max-width: 1200px )
+    .news
+        &__preview
+            padding: 0 25px
+            margin-bottom: 100px
+            &-title
+                font-size: 45px
+            &-divider
+                margin-bottom: 50px
+            &-table
+                gap: 25px
+            &-item
+                &-title
+                    font-size: 13px
+                &-date
+                    font-size: 13px
+@media ( max-width: 992px )
+    .news
+        &__preview
+            margin-bottom: 50px
+            &-item
+                flex-direction: column
+                &-left
+                    width: 100%
+                &-right
+                    width: 100%
+                    text-align: justify
+                &-title
+                    font-size: 14px
+@media ( max-width: 768px )
+    .news
+        &__preview
+            &-title
+                font-size: 45px
+            &-table
+                grid-template-columns: repeat(2, 1fr)
+                gap: 40px
+            &-item
+                &-right
+                    height: 100px
+                &-title
+                    font-size: 16px
+                    margin-bottom: 10px
+@media ( max-width: 576px )
+    .news
+        &__preview
+            &-title
+                margin-bottom: 25px
+            &-table
+                grid-template-columns: repeat(1, 1fr)
+                gap: 30px
+
