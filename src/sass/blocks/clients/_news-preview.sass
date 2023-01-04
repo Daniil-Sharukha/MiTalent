@@ -1,0 +1,60 @@
+.news__preview
+    padding: 0 120px
+    margin-bottom: 170px
+    &-title
+        font-family: 'Poppins', sans-serif
+        font-size: 60px
+        line-height: 45px
+        text-align: center
+        color: #1a1a1d
+        margin-bottom: 50px
+    &-divider
+        width: 150px
+        height: 2px
+        background-color: #242424
+        margin: 0 auto
+        margin-bottom: 70px
+    &-table
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        gap: 50px
+    &-item
+        width: 520px
+        display: flex
+        justify-content: space-between
+        cursor: pointer
+        &:hover
+            text-decoration: none
+            .news__preview-item-title
+                color: #87bbbc
+            .news__preview-item-left
+                background-color: #b4d3d3
+            .news__preview-item-play
+                display: block
+        &-left
+            width: 200px
+            height: 140px
+            background-color: #e2e8e8
+            transition: 0.3s all
+        &-play
+            display: none
+            text-align: center
+            margin-top: 58px
+            svg
+                fill: #fff
+        &-right
+            width: 280px
+            height: 140px
+        &-title
+            font-family: 'Poppins', sans-serif
+            font-size: 24px
+            font-weight: 500
+            line-height: 30px
+            color: #1a1a1d
+            margin-bottom: 20px
+            transition: 0.2s all
+        &-date
+            font-family: 'Nunito', sans-serif
+            font-size: 16px
+            line-height: 16px
+            color: #77777e
