@@ -1,0 +1,177 @@
+.homepage
+    padding-top: 270px
+    height: 1080px
+    &__promo
+        &-wrapper
+            position: relative
+        &-photo
+            position: absolute
+            width: 1120px
+            height: 810px
+            background-color: #e2e8e8
+            left: 320px
+            z-index: -1
+            padding-left: 20%
+            img
+                width: 100%
+                height: 100%
+                object-fit: contain
+        &__text
+            position: absolute
+            width: 468px
+            color: #1a1a1d
+            top: 268px
+            left: 240px
+            &-name
+                font-family: 'Poppins', sans-serif
+                font-size: 100px
+                line-height: 100px
+                letter-spacing: 2.02px
+                font-weight: 400
+                margin-bottom: 80px
+            &-merits
+                font-family: 'Nunito', sans-serif
+                font-size: 17px
+                font-weight: 600
+                line-height: 30px
+                letter-spacing: 3.4px
+                text-transform: uppercase
+        &__btn
+            &-wrapper
+                position: absolute
+                display: flex
+                cursor: pointer
+                width: 370px
+                height: 110px
+                top: 700px
+                left: 60px
+            &-profile
+                width: 260px
+                background-color: #b4d3d3
+                font-family: 'Nunito', sans-serif
+                font-size: 14px
+                font-weight: 700
+                line-height: 110px
+                text-align: center
+                letter-spacing: 2.8px
+                color: #fff
+            &-icon
+                width: 110px
+                height: 110px
+                background-color: #fff
+                text-align: center
+                line-height: 110px
+        &__numbers
+            position: absolute
+            margin-top: 540px
+            height: 95px
+            right: 350px
+            &-number
+                position: relative
+                cursor: pointer
+                font-family: 'Nunito', sans-serif
+                font-size: 12px
+                font-weight: 700
+                letter-spacing: 2.4px
+                color: rgba(105, 105, 112, 0.7)
+                margin-bottom: 30px
+                &:last-child
+                    margin-bottom: 0
+                &:nth-child(2)
+                    &::after
+                        content: ''
+                        position: absolute
+                        width: 56px
+                        height: 2px
+                        background-color: #000
+                        top: 7px
+                        left: 100px
+            &-line
+                width: 56px
+                border-bottom: 1px solid #000
+@media ( max-width: 1200px )
+    .homepage
+        height: 900px
+        padding-top: 200px
+        &__promo
+            &-photo
+                width: 460px
+                height: 640px
+                padding-left: 0
+                right: 0
+                left: auto
+            &__text
+                top: 300px
+                width: 350px
+                left: 100px
+                &-name
+                    font-size: 70px
+                    line-height: 80px
+                    margin-bottom: 20px
+            &__numbers
+                display: none
+            &__btn
+                &-wrapper
+                    top: 530px
+                    left: 85px
+@media ( max-width: 992px )
+    .homepage
+        &__promo
+            &-photo
+                width: 400px
+            &__text
+                width: 260px
+                &-name
+                    font-size: 50px
+            &__btn
+                &-wrapper
+                    width: 270px
+                    height: 80px
+                    top: 560px
+                &-profile
+                    width: 190px
+                    line-height: 80px
+                &-icon
+                    width: 80px
+                    height: 80px
+                    line-height: 80px
+@media ( max-width: 768px )
+    .homepage
+        height: 860px
+        padding-top: 130px
+        &__promo
+            &__text
+                left: 30px
+                top: 397px
+                padding-bottom: 20px
+                background-color: rgba(255, 255, 255, .8)
+                &-merits
+                    font-size: 15px
+                &-name
+                    line-height: 60px
+            &__btn
+                &-wrapper
+                    top: 587px
+                    left: 30px
+                &-profile
+                    width: 180px
+@media ( max-width: 576px )
+    .homepage
+        height: 740px
+        &__promo
+            &-photo
+                width: 90%
+                position: relative
+                margin: 0 auto 
+                height: 385px
+            &__text
+                top: 320px
+            &__btn
+                &-wrapper
+                    top: 515px
+                    height: 60px
+                &-profile
+                    line-height: 60px
+                &-icon
+                    height: 60px
+                    line-height: 60px

@@ -1,11 +1,12 @@
-.table
-    padding: 0 120px
-    margin-bottom: 120px
+.homepage__table
+    padding: 100px 120px 0
+    margin-bottom: 90px
     &__header
         display: flex
         justify-content: space-between
         margin-bottom: 80px
     &__tabs
+        margin: 0 auto
         ul
             display: flex
             width: 440px
@@ -32,14 +33,15 @@
     &__wrapper
         display: grid
         grid-template-columns: repeat(4, 1fr)
+        margin-bottom: 60px
     &__item
         height: 490px
         position: relative
         background-color: #000
         &:hover
-            .table__item-profile
+            .homepage__table__item-profile
                 display: block
-            .table__item-link
+            .homepage__table__item-link
                 img
                     opacity: .4
         &-link
@@ -87,23 +89,44 @@
             text-align: center
             color: #aeaeb7
             text-transform: uppercase
+    &__btn
+        display: block
+        margin: 0 auto
+        width: 220px
+        height: 60px
+        border-radius: 30px
+        border: none
+        background-color: #b4d3d3
+        font-family: 'Nunito', sans-serif
+        font-size: 14px
+        font-weight: 600
+        letter-spacing: 2px
+        color: #fff
+        text-transform: uppercase
+        transition: .3s all
+        &:hover
+            background-color: #91b6b6
 @media ( max-width: 1200px )
-    .table
+    .homepage__table
         padding: 0 50px
         &__item
             height: 350px
 @media ( max-width: 992px )
-    .table
+    .homepage__table
+        margin-bottom: 70px
+        &__header
+            margin-bottom: 40px
         &__item
             &-name
                 font-size: 20px
 @media ( max-width: 768px )
-    .table
+    .homepage__table
         margin-bottom: 80px
         &__header
             margin-bottom: 30px
             flex-direction: column
         &__tabs
+            width: 100%
             ul
                 width: 100%
                 margin-bottom: 0
@@ -111,13 +134,22 @@
             display: none
         &__wrapper
             grid-template-columns: repeat(2, 1fr)
+            margin-bottom: 50px
+        &__btn
+            width: 190px
+            height: 60px
+            font-size: 12px
 @media ( max-width: 576px )
-    .table
+    .homepage__table
+        margin-bottom: 50px
         &__tabs
             ul
                 flex-wrap: wrap
-        &__tab
-            font-size: 24px
-            margin: 5px 0
         &__wrapper
             grid-template-columns: repeat(1, 1fr)
+            margin-bottom: 30px
+        &__tab
+            margin: 5px 0
+            font-size: 20px
+        &__btn
+            height: 50px
