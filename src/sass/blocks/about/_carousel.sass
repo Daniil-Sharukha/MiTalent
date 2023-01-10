@@ -2,6 +2,20 @@
     position: relative
     width: 90%
     margin: 0 auto
+    margin-bottom: 130px
+    &-title
+        font-family: 'Poppins', sans-serif
+        font-size: 50px
+        line-height: 50px
+        text-align: center
+        color: #1a1a1d
+        margin-bottom: 40px
+    &-divider
+        width: 140px
+        height: 2px
+        background-color: #1a1a1d
+        margin: 0 auto
+        margin-bottom: 50px  
     &__left
         cursor: pointer
         position: absolute
@@ -16,6 +30,7 @@
         display: flex
         margin: 0 auto
         max-width: 1680px
+        justify-content: center
     &__item
         position: relative
         background-color: #000
@@ -90,6 +105,9 @@
                 font-size: 10px
 @media ( max-width: 576px )
     .carousel
+        margin-bottom: 90px
+        &-title
+            font-size: 35px
         &__item
             &:first-child
                 display: none
