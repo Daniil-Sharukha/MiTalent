@@ -39,6 +39,21 @@
         display: flex
         justify-content: space-between
         align-items: center
+        &__item
+            &:hover
+                &:nth-child(1)
+                        svg
+                            fill: #4867aa
+                &:nth-child(2)
+                        svg
+                            fill: #cc40b9
+                &:nth-child(3)
+                        svg
+                            fill: #cf0404
+                &:nth-child(4)
+                        svg
+                            fill: #1d9bf0
+                
 @media ( max-width: 768px )
     .footer 
         &__newsletter

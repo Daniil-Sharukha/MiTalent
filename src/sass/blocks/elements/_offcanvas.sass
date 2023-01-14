@@ -1,0 +1,77 @@
+.offcanvas
+    width: 400px
+    height: 100vh
+    background-image: linear-gradient(to top,#b4d3d3,#d9e7e7)
+    padding: 60px 40px 40px
+    position: absolute
+    left: -400px
+    top: 0
+    z-index: 5
+    transition: .3s all
+    &__menu
+        &-header
+            margin-bottom: 70px
+            display: flex
+            justify-content: space-between
+        &-close
+            cursor: pointer
+            opacity: .4
+            transition: .3s all
+            &:hover
+                opacity: 1
+            svg
+                transform: scale(1.5, 1.5)
+        ul
+            li
+                display: block
+                max-width: fit-content
+                list-style-type: none
+                margin-bottom: 30px
+                a
+                    font-family: 'Nunito Sans',sans-serif
+                    text-decoration: none
+                    color: #77777e
+                    h3
+                        display: inline-block
+                        position: relative
+                        text-transform: capitalize
+                        font-family: 'Poppins',sans-serif
+                        color: #1d1d1a
+                        font-size: 20px
+                        line-height: 20px
+                        margin-bottom: 5px
+                        &::after
+                            content: ''
+                            position: absolute
+                            width: 100%
+                            transform: scaleX(0)
+                            height: 3px
+                            bottom: -4px
+                            left: 0
+                            background-color: #ffffffa8
+                            transform-origin: bottom right
+                            transition: transform 0.3s ease-out
+                            z-index: -1
+                &:hover
+                    h3
+                        &::after
+                            transition-delay: .1s
+                            transform: scaleX(1)
+                            transform-origin: bottom left            
+        &-footer
+            position: absolute
+            bottom: 40px
+            max-width: 320px
+            text-align: center
+            font-family: 'Nunito Sans',sans-serif
+    &-active
+        left: 0
+@media ( max-width: 576px )
+    .offcanvas
+        width: 320px
+        padding: 60px 25px 20px
+        &__menu
+            &-logo
+                a
+                    img
+                        width: 80%

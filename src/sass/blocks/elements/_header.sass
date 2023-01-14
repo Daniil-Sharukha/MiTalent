@@ -17,6 +17,10 @@
             width: 25px
             height: 17px
             margin-left: 60px
+            opacity: 1
+            transition: .2s all
+            &:hover
+                opacity: .6
             span
                 display: block
                 width: 100%
@@ -35,6 +39,15 @@
             font-weight: 700
             letter-spacing: 2.8px
             line-height: 17px
+            transition: .2s all
+            &:hover
+                text-decoration: none
+                opacity: .6
+                color: #1a1a1d
+        a.header__contacts
+            &:hover
+                opacity: 1
+                color: #d1d1d1
     &__clients
         color: #1a1a1d
     &__news
@@ -45,6 +58,10 @@
         cursor: pointer
         margin-right: 60px
         line-height: 20px
+        &:hover
+            svg
+                transition: .2s all
+                opacity: .5
 @media ( max-width: 992px )
     .header
         &__leftSide
