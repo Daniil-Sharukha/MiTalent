@@ -1,10 +1,18 @@
 /******/ (() => { // webpackBootstrap
-var __webpack_exports__ = {};
-/*!**************************!*\
-  !*** ./src/js/script.js ***!
-  \**************************/
-// Left side menu toggle
-function toggleOffcanvasMenu() {
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/js/modules/elements/offcanvasMenu.js":
+/*!**************************************************!*\
+  !*** ./src/js/modules/elements/offcanvasMenu.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function offcanvasMenu() {
     const menuOpen = document.querySelector('.burger'),
           menuClose = document.querySelector('.offcanvas__menu-close'),
           menuStatus = document.querySelector('.offcanvas');
@@ -20,10 +28,86 @@ function toggleOffcanvasMenu() {
     });
 }
 
-toggleOffcanvasMenu();
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (offcanvasMenu);
 
-// Homepage profile slider
+/***/ }),
 
+/***/ "./src/js/modules/homepage/homepageTable.js":
+/*!**************************************************!*\
+  !*** ./src/js/modules/homepage/homepageTable.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _services_services__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../services/services */ "./src/js/services/services.js");
+
+
+
+
+function homepageTable() {
+    class homepageTableItem{
+        constructor(img1, name, profession, link, parentSelector, ...classes) {
+            this.img = img1;
+            this.alt = name;
+            this.name = name;
+            this.profession = profession;
+            this.link = link;
+
+            this.classes = classes;
+            this.parent = document.querySelector(parentSelector);
+        }
+
+        render() {
+            const element = document.createElement('div');
+
+            if (this.classes.length === 0) {
+                this.classes = "homepage__table__item";
+                element.classList.add(this.classes);
+            } else {
+                this.classes.forEach(className => element.classList.add(className));
+            }
+
+            element.innerHTML = `
+                <a href=${this.link} class="homepage__table__item-link">
+                    <img src=${this.img} alt=${this.alt}>
+                    <div class="homepage__table__item-profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
+                    </div>
+                    <div class="homepage__table__item-name">${this.name}</div>
+                    <div class="homepage__table__item-job">${this.profession}</div>
+                </a>
+            `;
+            this.parent.append(element);
+        }
+    }
+
+    (0,_services_services__WEBPACK_IMPORTED_MODULE_0__.getResourse)('http://localhost:8000/clients')
+    .then(data => {
+        data.length = 8;
+        data.forEach(({img1, name, profession, link}) => {
+            new homepageTableItem(img1, name, profession, link, ".homepage__table__wrapper").render();
+        });
+    });
+    
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (homepageTable);
+
+/***/ }),
+
+/***/ "./src/js/modules/homepage/profileSlider.js":
+/*!**************************************************!*\
+  !*** ./src/js/modules/homepage/profileSlider.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 function profileSlider() {
 
     const imagesArr = ["https://images.unsplash.com/photo-1516726817505-f5ed825624d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
@@ -74,7 +158,110 @@ function profileSlider() {
     
 }
 
-profileSlider();
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (profileSlider);
+
+/***/ }),
+
+/***/ "./src/js/services/services.js":
+/*!*************************************!*\
+  !*** ./src/js/services/services.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getResourse": () => (/* binding */ getResourse)
+/* harmony export */ });
+async function getResourse(url) {
+    let res = await fetch(url);
+
+    if (!res.ok) {
+        throw new Error(`Could not fetch ${url}, status: ${res.status}`);
+    }
+
+    return await res.json();
+}
+
+
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+(() => {
+/*!**************************!*\
+  !*** ./src/js/script.js ***!
+  \**************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _modules_elements_offcanvasMenu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/elements/offcanvasMenu */ "./src/js/modules/elements/offcanvasMenu.js");
+/* harmony import */ var _modules_homepage_homepageTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/homepage/homepageTable */ "./src/js/modules/homepage/homepageTable.js");
+/* harmony import */ var _modules_homepage_profileSlider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/homepage/profileSlider */ "./src/js/modules/homepage/profileSlider.js");
+
+
+
+
+(0,_modules_elements_offcanvasMenu__WEBPACK_IMPORTED_MODULE_0__["default"])();
+(0,_modules_homepage_profileSlider__WEBPACK_IMPORTED_MODULE_2__["default"])();
+(0,_modules_homepage_homepageTable__WEBPACK_IMPORTED_MODULE_1__["default"])();
+
+
+})();
 
 /******/ })()
 ;

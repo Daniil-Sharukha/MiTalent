@@ -1,67 +1,104 @@
 {
-  "menu": [
+  "clients": [
     {
-      "img": "img/tabs/vegy.jpg",
-      "altimg": "vegy",
-      "title": "Меню 'Фитнес'",
-      "descr": "Меню 'Фитнес' - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!",
-      "price": 9
+      "name": "Antonio Harrison",
+      "profession" : "Comedian",
+      "img1": "img/clients/Antonio_Harrison/Antonio_Harrison_1.jpg",
+      "img2": "img/clients/Antonio_Harrison/Antonio_Harrison_2.jpg",
+      "subtitle": "Antonio Harrison is a leading actor, comedian and writer.",
+      "award": "British Award 2020",
+      "link": "https://www.youtube.com",
+      "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
     },
     {
-      "img": "img/tabs/post.jpg",
-      "altimg": "post",
-      "title": "Меню 'Постное'",
-      "descr": "Меню 'Постное' - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения, молоко из миндаля, овса, кокоса или гречки, правильное количество белков за счет тофу и импортных вегетарианских стейков.",
-      "price": 14
+      "name": "Christopher Wong",
+      "profession" : "Actor",
+      "img1": "img/clients/Christopher_Wong/Christopher_Wong_1.jpg",
+      "img2": "img/clients/Christopher_Wong/Christopher_Wong_2.jpg",
+      "subtitle": "Christopher Wong is a leading actor, comedian and writer.",
+      "award": "British Award 2121",
+      "link": "https://www.youtube.com",
+      "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
     },
     {
-      "img": "img/tabs/elite.jpg",
-      "altimg": "elite",
-      "title": "Меню 'Премиум'",
-      "descr": "В меню 'Премиум' мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!",
-      "price": 21
-    }
-  ],
-  "requests": [
-    {
-      "name": "aboba",
-      "phone": "+7 (111) 111-11-11",
-      "id": 1
+      "name": "Mary Banks",
+      "profession" : "Singer",
+      "img1": "img/clients/Mary_Banks/Mary_Banks_1.jpg",
+      "img2": "img/clients/Mary_Banks/Mary_Banks_2.jpg",
+      "subtitle": "Mary Banks is a leading actor, comedian and writer.",
+      "award": "British Award 1999",
+      "link": "https://www.youtube.com",
+      "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
     },
     {
-      "name": "aboba",
-      "phone": "+7 (111) 111-11-11",
-      "id": 2
+      "name": "Megan Harper",
+      "profession" : "Comedian",
+      "img1": "img/clients/Megan_Harper/Megan_Harper_1.jpg",
+      "img2": "img/clients/Megan_Harper/Megan_Harper_2.jpg",
+      "subtitle": "Megan Harper is a leading actor.",
+      "award": "British Award 2000",
+      "link": "https://www.youtube.com",
+      "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
     },
     {
-      "name": "1",
-      "phone": "1",
-      "id": 3
+      "name": "Michael Reeves",
+      "profession" : "Model",
+      "img1": "img/clients/Michael_Reeves/Michael_Reeves_1.jpg",
+      "img2": "img/clients/Michael_Reeves/Michael_Reeves_2.jpg",
+      "subtitle": "Michael Reeves is a leading actor.",
+      "award": "British Award 2000",
+      "link": "https://www.youtube.com",
+      "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
     },
     {
-      "name": "aboba",
-      "phone": "+7 (111) 111-11-11",
-      "id": 4
+      "name": "Michelle Jones",
+      "profession" : "comedian",
+      "img1": "img/clients/Michelle_Jones/Michelle_Jones_1.jpg",
+      "img2": "img/clients/Michelle_Jones/Michelle_Jones_2.jpg",
+      "subtitle": "Michelle Jones is a leading model.",
+      "award": "British Award 2023",
+      "link": "https://www.youtube.com",
+      "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
     },
     {
-      "name": "aboba",
-      "phone": "+7 (111) 111-11-11",
-      "id": 5
+      "name": "Robin Bell",
+      "profession" : "comedian",
+      "img1": "img/clients/Robin_Bell/Robin_Bell_1.jpg",
+      "img2": "img/clients/Robin_Bell/Robin_Bell_2.jpg",
+      "subtitle": "Robin_Bell is a leading singer.",
+      "award": "British Award 2022",
+      "link": "https://www.youtube.com",
+      "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
     },
     {
-      "name": "aboba",
-      "phone": "+7 (111) 111-11-11",
-      "id": 6
+      "name": "Sharon Parks",
+      "profession" : "comedian",
+      "img1": "img/clients/Sharon_Parks/Sharon_Parks_1.jpg",
+      "img2": "img/clients/Sharon_Parks/Sharon_Parks_2.jpg",
+      "subtitle": "Sharon Parks is a leading stand-up comedian.",
+      "award": "British Award 2019",
+      "link": "https://www.youtube.com",
+      "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
     },
     {
-      "name": "Даниил",
-      "phone": "+7 (244) 242-42-44",
-      "id": 7
+      "name": "Victoria Harris",
+      "profession" : "model",
+      "img1": "img/clients/Victoria_Harris/Victoria_Harris_1.jpg",
+      "img2": "img/clients/Victoria_Harris/Victoria_Harris_2.jpg",
+      "subtitle": "Victoria Harris is a leading model.",
+      "award": "Spanish Award 2018",
+      "link": "https://www.youtube.com",
+      "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
     },
     {
-      "name": "asdasd",
-      "phone": "213123",
-      "id": 8
+      "name": "Wendy Perkins",
+      "profession" : "model",
+      "img1": "img/clients/Wendy_Perkins/Wendy_Perkins_1.jpg",
+      "img2": "img/clients/Wendy_Perkins/Wendy_Perkins_2.jpg",
+      "subtitle": "Wendy Perkins is a leading model.",
+      "award": "Spanish Award 2018",
+      "link": "https://www.youtube.com",
+      "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
     }
   ]
 }
