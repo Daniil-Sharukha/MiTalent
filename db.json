@@ -2,11 +2,11 @@
   "clients": [
     {
       "name": "Antonio Harrison",
-      "profession" : "Comedian",
+      "profession" : "Actor",
       "img1": "img/clients/Antonio_Harrison/Antonio_Harrison_1.jpg",
       "img2": "img/clients/Antonio_Harrison/Antonio_Harrison_2.jpg",
-      "subtitle": "Antonio Harrison is a leading actor, comedian and writer.",
-      "award": "British Award 2020",
+      "subtitle": "Antonio Harrison is a leading actor.",
+      "award": "British Award 1",
       "link": "https://www.youtube.com",
       "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
     },
@@ -15,8 +15,8 @@
       "profession" : "Actor",
       "img1": "img/clients/Christopher_Wong/Christopher_Wong_1.jpg",
       "img2": "img/clients/Christopher_Wong/Christopher_Wong_2.jpg",
-      "subtitle": "Christopher Wong is a leading actor, comedian and writer.",
-      "award": "British Award 2121",
+      "subtitle": "Christopher Wong is a leading actor.",
+      "award": "British Award 2",
       "link": "https://www.youtube.com",
       "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
     },
@@ -25,8 +25,8 @@
       "profession" : "Singer",
       "img1": "img/clients/Mary_Banks/Mary_Banks_1.jpg",
       "img2": "img/clients/Mary_Banks/Mary_Banks_2.jpg",
-      "subtitle": "Mary Banks is a leading actor, comedian and writer.",
-      "award": "British Award 1999",
+      "subtitle": "Mary Banks is a leading singer.",
+      "award": "British Award 3",
       "link": "https://www.youtube.com",
       "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
     },
@@ -42,7 +42,7 @@
     },
     {
       "name": "Michael Reeves",
-      "profession" : "Model",
+      "profession" : "Comedian",
       "img1": "img/clients/Michael_Reeves/Michael_Reeves_1.jpg",
       "img2": "img/clients/Michael_Reeves/Michael_Reeves_2.jpg",
       "subtitle": "Michael Reeves is a leading actor.",
@@ -52,7 +52,7 @@
     },
     {
       "name": "Michelle Jones",
-      "profession" : "comedian",
+      "profession" : "Model",
       "img1": "img/clients/Michelle_Jones/Michelle_Jones_1.jpg",
       "img2": "img/clients/Michelle_Jones/Michelle_Jones_2.jpg",
       "subtitle": "Michelle Jones is a leading model.",
@@ -62,7 +62,7 @@
     },
     {
       "name": "Robin Bell",
-      "profession" : "comedian",
+      "profession" : "Singer",
       "img1": "img/clients/Robin_Bell/Robin_Bell_1.jpg",
       "img2": "img/clients/Robin_Bell/Robin_Bell_2.jpg",
       "subtitle": "Robin_Bell is a leading singer.",
@@ -72,7 +72,7 @@
     },
     {
       "name": "Sharon Parks",
-      "profession" : "comedian",
+      "profession" : "Comedian",
       "img1": "img/clients/Sharon_Parks/Sharon_Parks_1.jpg",
       "img2": "img/clients/Sharon_Parks/Sharon_Parks_2.jpg",
       "subtitle": "Sharon Parks is a leading stand-up comedian.",
@@ -82,7 +82,7 @@
     },
     {
       "name": "Victoria Harris",
-      "profession" : "model",
+      "profession" : "Acress",
       "img1": "img/clients/Victoria_Harris/Victoria_Harris_1.jpg",
       "img2": "img/clients/Victoria_Harris/Victoria_Harris_2.jpg",
       "subtitle": "Victoria Harris is a leading model.",
@@ -92,10 +92,110 @@
     },
     {
       "name": "Wendy Perkins",
-      "profession" : "model",
+      "profession" : "Singer",
       "img1": "img/clients/Wendy_Perkins/Wendy_Perkins_1.jpg",
       "img2": "img/clients/Wendy_Perkins/Wendy_Perkins_2.jpg",
       "subtitle": "Wendy Perkins is a leading model.",
+      "award": "Spanish Award 2018",
+      "link": "https://www.youtube.com",
+      "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
+    },
+    {
+      "name": "Adaora Akubilo",
+      "profession" : "Actress",
+      "img1": "img/clients/Adaora_Akubilo/Adaora_Akubilo_1.jpg",
+      "img2": "img/clients/Adaora_Akubilo/Adaora_Akubilo_2.jpg",
+      "subtitle": "Adaora Akubilo is a leading model.",
+      "award": "Spanish Award 2018",
+      "link": "https://www.youtube.com",
+      "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
+    },
+    {
+      "name": "Alexis Savage",
+      "profession" : "Model",
+      "img1": "img/clients/Alexis_Savage/Alexis_Savage_1.jpg",
+      "img2": "img/clients/Alexis_Savage/Alexis_Savage_2.jpg",
+      "subtitle": "Alexis Savage is a leading model.",
+      "award": "Spanish Award 2018",
+      "link": "https://www.youtube.com",
+      "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
+    },
+    {
+      "name": "Anne Bannert",
+      "profession" : "Singer",
+      "img1": "img/clients/Anne_Bannert/Anne_Bannert_1.jpg",
+      "img2": "img/clients/Anne_Bannert/Anne_Bannert_2.jpg",
+      "subtitle": "Anne Bannert is a leading model.",
+      "award": "Spanish Award 2018",
+      "link": "https://www.youtube.com",
+      "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
+    },
+    {
+      "name": "Axel Kwenkeu",
+      "profession" : "Model",
+      "img1": "img/clients/Axel_Kwenkeu/Axel_Kwenkeu_1.jpg",
+      "img2": "img/clients/Axel_Kwenkeu/Axel_Kwenkeu_2.jpg",
+      "subtitle": "Axel Kwenkeu is a leading model.",
+      "award": "Spanish Award 2018",
+      "link": "https://www.youtube.com",
+      "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
+    },
+    {
+      "name": "Daryl Dismond",
+      "profession" : "Actor",
+      "img1": "img/clients/Daryl_Dismond/Daryl_Dismond_1.jpg",
+      "img2": "img/clients/Daryl_Dismond/Daryl_Dismond_2.jpg",
+      "subtitle": "Daryl Dismond is a leading model.",
+      "award": "Spanish Award 2018",
+      "link": "https://www.youtube.com",
+      "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
+    },
+    {
+      "name": "Erik Neff",
+      "profession" : "Comedian",
+      "img1": "img/clients/Erik_Neff/Erik_Neff_1.jpg",
+      "img2": "img/clients/Erik_Neff/Erik_Neff_2.jpg",
+      "subtitle": "Erik Neff is a leading model.",
+      "award": "Spanish Award 2018",
+      "link": "https://www.youtube.com",
+      "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
+    },
+    {
+      "name": "Kiersten Dolbec",
+      "profession" : "Singer",
+      "img1": "img/clients/Kiersten_Dolbec/Kiersten_Dolbec_1.jpg",
+      "img2": "img/clients/Kiersten_Dolbec/Kiersten_Dolbec_2.jpg",
+      "subtitle": "Kiersten Dolbec is a leading model.",
+      "award": "Spanish Award 2018",
+      "link": "https://www.youtube.com",
+      "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
+    },
+    {
+      "name": "Maximiliano Patane",
+      "profession" : "Model",
+      "img1": "img/clients/Maximiliano_Patane/Maximiliano_Patane_1.jpg",
+      "img2": "img/clients/Maximiliano_Patane/Maximiliano_Patane_2.jpg",
+      "subtitle": "Maximiliano Patane is a leading model.",
+      "award": "Spanish Award 2018",
+      "link": "https://www.youtube.com",
+      "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
+    },
+    {
+      "name": "Yaris Cedano",
+      "profession" : "Singer",
+      "img1": "img/clients/Yaris_Cedano/Yaris_Cedano_1.jpg",
+      "img2": "img/clients/Yaris_Cedano/Yaris_Cedano_2.jpg",
+      "subtitle": "Yaris Cedano is a leading model.",
+      "award": "Spanish Award 2018",
+      "link": "https://www.youtube.com",
+      "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
+    },
+    {
+      "name": "Zach Pricer",
+      "profession" : "Actor",
+      "img1": "img/clients/Zach_Pricer/Zach_Pricer_1.jpg",
+      "img2": "img/clients/Zach_Pricer/Zach_Pricer_2.jpg",
+      "subtitle": "Zach Pricer is a leading model.",
       "award": "Spanish Award 2018",
       "link": "https://www.youtube.com",
       "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
