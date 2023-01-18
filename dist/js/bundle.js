@@ -29,20 +29,20 @@ class homepageTableItem{
         const element = document.createElement('div');
 
         if (this.classes.length === 0) {
-            this.classes = "homepage__table__item";
+            this.classes = "table__item";
             element.classList.add(this.classes);
         } else {
             this.classes.forEach(className => element.classList.add(className));
         }
 
         element.innerHTML = `
-            <a href=${this.link} class="homepage__table__item-link">
+            <a href=${this.link} class="table__item-link">
                 <img src=${this.img} alt=${this.alt}>
-                <div class="homepage__table__item-profile">
+                <div class="table__item-profile">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
                 </div>
-                <div class="homepage__table__item-name">${this.name}</div>
-                <div class="homepage__table__item-job">${this.profession}</div>
+                <div class="table__item-name">${this.name}</div>
+                <div class="table__item-job">${this.profession}</div>
             </a>
         `;
         this.parent.append(element);
@@ -111,9 +111,8 @@ function homepageTable() {
         }
         shuffle(data);
         //create table item
-        data.length = 8;
         data.forEach(({img1, name, profession, link}) => {
-            new _classes_tableItem__WEBPACK_IMPORTED_MODULE_1__["default"](img1, name, profession, link, ".homepage__table__wrapper").render();
+            new _classes_tableItem__WEBPACK_IMPORTED_MODULE_1__["default"](img1, name, profession, link, ".table__wrapper").render();
         });
     });
     
@@ -207,21 +206,21 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function sortingTableItems() {
-    const sortingTabs = document.querySelectorAll('.homepage__table__tab');
+    const sortingTabs = document.querySelectorAll('.table__tab');
 
     sortingTabs.forEach(tab =>
         tab.addEventListener('click', (event) => {
-            const tableItem = document.querySelectorAll('.homepage__table__item');
+            const tableItem = document.querySelectorAll('.table__item');
             
-            if(event.target.classList.contains('homepage__table__tab-active')) {
-                sortingTabs.forEach(tab => tab.classList.remove('homepage__table__tab-active'));
+            if(event.target.classList.contains('table__tab-active')) {
+                sortingTabs.forEach(tab => tab.classList.remove('table__tab-active'));
                 tableItem.forEach(item => {
                     item.remove();
                 });
                 (0,_homepageTable__WEBPACK_IMPORTED_MODULE_2__["default"])();
             } else {
-                sortingTabs.forEach(tab => tab.classList.remove('homepage__table__tab-active'));
-                event.target.classList.add('homepage__table__tab-active');
+                sortingTabs.forEach(tab => tab.classList.remove('table__tab-active'));
+                event.target.classList.add('table__tab-active');
 
                 tableItem.forEach(item => {
                     item.remove();
@@ -237,7 +236,7 @@ function sortingTableItems() {
                     });
     
                     arr.forEach(({img1, name, key, profession, link}) => {
-                        new _classes_tableItem__WEBPACK_IMPORTED_MODULE_1__["default"](img1, name, profession, link, ".homepage__table__wrapper", key).render();
+                        new _classes_tableItem__WEBPACK_IMPORTED_MODULE_1__["default"](img1, name, profession, link, ".table__wrapper", key).render();
                     });
                                     
                 });

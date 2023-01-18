@@ -19,10 +19,17 @@
         left: 0
         display: flex
         justify-content: flex-end
+        transition: .3s all
+        &:hover
+            a
+                transition: .3s all
+                background-image: none
+                background-color: #a4d6d6
+                text-decoration: none
         a
             width: 55%
             height: 110px
-            background-image: linear-gradient(to top, #b4d3d3, #d9e7e7)
+            background-color: #b4d3d3
             padding-top: 40px
             text-align: center
             display: block
@@ -33,6 +40,7 @@
             line-height: 30px
             letter-spacing: 2.8px
             color: #fff
+            transition: .3s all
         &-icon
             width: 25%
             height: 110px

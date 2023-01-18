@@ -14,9 +14,8 @@ function homepageTable() {
         }
         shuffle(data);
         //create table item
-        data.length = 8;
         data.forEach(({img1, name, profession, link}) => {
-            new homepageTableItem(img1, name, profession, link, ".homepage__table__wrapper").render();
+            new homepageTableItem(img1, name, profession, link, ".table__wrapper").render();
         });
     });
     
