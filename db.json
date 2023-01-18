@@ -220,5 +220,37 @@
       "link": "https://www.youtube.com",
       "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam."
     }
+  ],
+  "news": [
+    {
+      "title": "5 Reasons To Keep Your Beauty Salon Reservation",
+      "date": "8 March, 2020",
+      "image": "img/news/img_3.jpg"
+    },
+    {
+      "title": "Benjamin Franklin Method Of Habit Formation",
+      "date": "8 March, 2020",
+      "image": "https://img.joinfo.com/i/2020/11/5fabd97cd440d.jpg"
+    },
+    {
+      "title": "29 Motivational Quotes For Business And Other Work Environments",
+      "date": "8 March, 2020",
+      "image": "https://www.intuitive-fotografie.de/wp-content/uploads/2022/03/4_image-asset.jpg"
+    },
+    {
+      "title": "Use Your Reset Button To Change Your Vibration",
+      "date": "8 March, 2020",
+      "image": "https://64.media.tumblr.com/a7b7849cc405bb84684bd1a0cc0ec82d/tumblr_o2eta9YCvp1rbqjqso2_1280.jpg"
+    },
+    {
+      "title": "Motivation And Your Personal Vision An Unbeatable Force",
+      "date": "8 March, 2020",
+      "image": "https://i.pinimg.com/originals/5e/c6/b4/5ec6b41a8c980495c22378fd429e2185.jpg"
+    },
+    {
+      "title": "Dream Interpretation Common Symbols And Their Meanings",
+      "date": "8 March, 2020",
+      "image": "https://i.pinimg.com/originals/05/dd/66/05dd665b5f56608fba404731dcf7b074.jpg"
+    }
   ]
 }

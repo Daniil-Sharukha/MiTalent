@@ -12,30 +12,28 @@
             height: 100%
             object-fit: cover
             opacity: .7
-    &__contact
+    &__btn
         width: 40%
-        cursor: pointer
         position: absolute
         bottom: 0
         left: 0
         display: flex
         justify-content: flex-end
-        &__link
+        a
             width: 55%
             height: 110px
             background-image: linear-gradient(to top, #b4d3d3, #d9e7e7)
             padding-top: 40px
             text-align: center
-            a
-                display: block
-                font-family: 'Nunito Sans', sans-serif
-                text-transform: uppercase
-                font-size: 14px
-                font-weight: 800
-                line-height: 30px
-                letter-spacing: 2.8px
-                color: #fff
-        &__icon
+            display: block
+            font-family: 'Nunito Sans', sans-serif
+            text-transform: uppercase
+            font-size: 14px
+            font-weight: 800
+            line-height: 30px
+            letter-spacing: 2.8px
+            color: #fff
+        &-icon
             width: 25%
             height: 110px
             background-color: #fff
@@ -84,14 +82,13 @@
 @media ( max-width: 992px )
     .contacts
         height: 730px
-        &__contact
+        &__btn
             width: 40%
-            &__link
+            a
                 height: 80px
                 padding-top: 26px
-                a
-                    font-size: 13px
-            &__icon
+                font-size: 13px
+            &-icon
                 height: 80px
         &__content
             max-width: 400px
