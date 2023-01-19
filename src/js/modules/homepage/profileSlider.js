@@ -11,7 +11,7 @@ function profileSlider() {
     const currentName = document.querySelector('#homepage_name'),
           currentMerit = document.querySelector('#homepage_merit'),
           currentImage = document.querySelector('#homepage_image'),
-          currentSidebarNumber = document.querySelector('.sidebar__number');
+          currentSidebarNumber = document.querySelector('#homepage__sidebar-number');
 
     let i = 0;
 

@@ -53,6 +53,63 @@ class homepageTableItem{
 
 /***/ }),
 
+/***/ "./src/js/modules/clients/clientsSlider.js":
+/*!*************************************************!*\
+  !*** ./src/js/modules/clients/clientsSlider.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function clientsSlider() {
+    const sidebarArr = ["01", "02", "03", "04"],
+          carouselWrapper = document.querySelector('.talent__item-wrapper'),
+          slideUp = document.querySelector('.talent__right-switch-up'),
+          slideDown = document.querySelector('.talent__right-switch-down'),
+          number = document.querySelector('#clients__sidebar-number');
+
+    let i = 0;
+
+    slideDown.addEventListener('click', () => {
+        let currentState = window.getComputedStyle(carouselWrapper).getPropertyValue('top'),
+        currentWrapperHeight = window.getComputedStyle(carouselWrapper).getPropertyValue('height');
+        carouselWrapper.style.top = `${+currentState.slice(0, -2) - (+currentWrapperHeight.slice(0, -2) / 4 )}px`;
+
+        ++i;
+
+        if (carouselWrapper.style.top.slice(0, -2) < -(+currentWrapperHeight.slice(0, -2) - +currentWrapperHeight.slice(0, -2) / 4 ) && i > 3) {
+            carouselWrapper.style.top = 0;
+            i = 0;
+        }
+        number.innerHTML = sidebarArr[i];
+        
+    });
+
+    slideUp.addEventListener('click', () => {
+        let currentState = window.getComputedStyle(carouselWrapper).getPropertyValue('top'),
+        currentWrapperHeight = window.getComputedStyle(carouselWrapper).getPropertyValue('height');
+        carouselWrapper.style.top = `${+currentState.slice(0, -2) + (+currentWrapperHeight.slice(0, -2) / 4 )}px`;
+
+        i--;
+
+        if (carouselWrapper.style.top.slice(0, -2) > 0 && i < 0) {
+            carouselWrapper.style.top = `${-(+currentWrapperHeight.slice(0, -2) - +currentWrapperHeight.slice(0, -2) / 4  )}px`;
+
+            i = 3;
+        }
+        number.innerHTML = sidebarArr[i];
+    });
+
+    
+
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (clientsSlider);
+
+/***/ }),
+
 /***/ "./src/js/modules/elements/animationDelay.js":
 /*!***************************************************!*\
   !*** ./src/js/modules/elements/animationDelay.js ***!
@@ -173,7 +230,7 @@ function profileSlider() {
     const currentName = document.querySelector('#homepage_name'),
           currentMerit = document.querySelector('#homepage_merit'),
           currentImage = document.querySelector('#homepage_image'),
-          currentSidebarNumber = document.querySelector('.sidebar__number');
+          currentSidebarNumber = document.querySelector('#homepage__sidebar-number');
 
     let i = 0;
 
@@ -377,6 +434,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_homepage_homepageTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/homepage/homepageTable */ "./src/js/modules/homepage/homepageTable.js");
 /* harmony import */ var _modules_homepage_profileSlider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/homepage/profileSlider */ "./src/js/modules/homepage/profileSlider.js");
 /* harmony import */ var _modules_homepage_sortingTableTabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/homepage/sortingTableTabs */ "./src/js/modules/homepage/sortingTableTabs.js");
+/* harmony import */ var _modules_clients_clientsSlider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/clients/clientsSlider */ "./src/js/modules/clients/clientsSlider.js");
+
 
 
 
@@ -389,6 +448,7 @@ __webpack_require__.r(__webpack_exports__);
 (0,_modules_homepage_profileSlider__WEBPACK_IMPORTED_MODULE_2__["default"])();
 (0,_modules_homepage_homepageTable__WEBPACK_IMPORTED_MODULE_1__["default"])();
 (0,_modules_homepage_sortingTableTabs__WEBPACK_IMPORTED_MODULE_3__["default"])();
+(0,_modules_clients_clientsSlider__WEBPACK_IMPORTED_MODULE_4__["default"])();
 
 })();
 
