@@ -53,6 +53,31 @@ class homepageTableItem{
 
 /***/ }),
 
+/***/ "./src/js/modules/elements/animationDelay.js":
+/*!***************************************************!*\
+  !*** ./src/js/modules/elements/animationDelay.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function animationDelay(itemClass) {
+    const itemArr = document.querySelectorAll(itemClass);
+    let delay = 0.5;
+    
+    itemArr.forEach(item => {
+            item.style.animationDelay = `${delay}s`;
+            delay += 0.5;
+    });
+
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (animationDelay);
+
+/***/ }),
+
 /***/ "./src/js/modules/elements/offcanvasMenu.js":
 /*!**************************************************!*\
   !*** ./src/js/modules/elements/offcanvasMenu.js ***!
@@ -95,6 +120,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _services_services__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../services/services */ "./src/js/services/services.js");
 /* harmony import */ var _classes_tableItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../classes/tableItem */ "./src/js/modules/classes/tableItem.js");
+/* harmony import */ var _elements_animationDelay__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../elements/animationDelay */ "./src/js/modules/elements/animationDelay.js");
+
 
 
 
@@ -113,6 +140,7 @@ function homepageTable() {
         //create table item
         data.forEach(({img1, name, profession, link}) => {
             new _classes_tableItem__WEBPACK_IMPORTED_MODULE_1__["default"](img1, name, profession, link, ".table__wrapper").render();
+            (0,_elements_animationDelay__WEBPACK_IMPORTED_MODULE_2__["default"])('.table__item');
         });
     });
     
@@ -199,6 +227,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_services__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../services/services */ "./src/js/services/services.js");
 /* harmony import */ var _classes_tableItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../classes/tableItem */ "./src/js/modules/classes/tableItem.js");
 /* harmony import */ var _homepageTable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./homepageTable */ "./src/js/modules/homepage/homepageTable.js");
+/* harmony import */ var _elements_animationDelay__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../elements/animationDelay */ "./src/js/modules/elements/animationDelay.js");
+
 
 
 
@@ -237,6 +267,7 @@ function sortingTableItems() {
     
                     arr.forEach(({img1, name, key, profession, link}) => {
                         new _classes_tableItem__WEBPACK_IMPORTED_MODULE_1__["default"](img1, name, profession, link, ".table__wrapper", key).render();
+                        (0,_elements_animationDelay__WEBPACK_IMPORTED_MODULE_3__["default"])('.table__item');
                     });
                                     
                 });
@@ -350,6 +381,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+// import animationDelay from "./modules/elements/animationDelay";
 // import homepageTableItem from "./modules/classes/tableItem";
 
 (0,_modules_elements_offcanvasMenu__WEBPACK_IMPORTED_MODULE_0__["default"])();

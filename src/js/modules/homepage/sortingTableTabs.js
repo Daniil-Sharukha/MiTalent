@@ -1,6 +1,7 @@
 import { getResourse } from "../../services/services";
 import homepageTableItem from "../classes/tableItem";
 import homepageTable from "./homepageTable";
+import animationDelay from "../elements/animationDelay";
 
 
 
@@ -36,6 +37,7 @@ function sortingTableItems() {
     
                     arr.forEach(({img1, name, key, profession, link}) => {
                         new homepageTableItem(img1, name, profession, link, ".table__wrapper", key).render();
+                        animationDelay('.table__item');
                     });
                                     
                 });

@@ -1,5 +1,6 @@
 import { getResourse } from "../../services/services";
 import homepageTableItem from "../classes/tableItem";
+import animationDelay from "../elements/animationDelay";
 
 function homepageTable() {
     //get data from database
@@ -16,6 +17,7 @@ function homepageTable() {
         //create table item
         data.forEach(({img1, name, profession, link}) => {
             new homepageTableItem(img1, name, profession, link, ".table__wrapper").render();
+            animationDelay('.table__item');
         });
     });
     
