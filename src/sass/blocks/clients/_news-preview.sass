@@ -24,23 +24,22 @@
         cursor: pointer
         &:hover
             text-decoration: none
+            .news__preview-item-left
+                img
+                    opacity: .7
             .news__preview-item-title
                 color: #87bbbc
-            .news__preview-item-left
-                background-color: #b4d3d3
-            .news__preview-item-play
-                display: block
         &-left
             width: 45%
             height: 140px
-            background-color: #e2e8e8
+            background-color: #000
             transition: 0.3s all
-        &-play
-            display: none
-            text-align: center
-            margin-top: 58px
-            svg
-                fill: #fff
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                opacity: .8
+                transition: .2s all
         &-right
             width: 50%
             height: 140px
