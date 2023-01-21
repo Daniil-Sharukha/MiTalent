@@ -1,5 +1,6 @@
 function clientsSlider() {
-    const sidebarArr = ["01", "02", "03", "04"],
+    if (document.querySelector('.talent__item-wrapper')) {
+        const sidebarArr = ["01", "02", "03", "04"],
           carouselWrapper = document.querySelector('.talent__item-wrapper'),
           slideUp = document.querySelector('.talent__right-switch-up'),
           slideDown = document.querySelector('.talent__right-switch-down'),
@@ -36,9 +37,7 @@ function clientsSlider() {
         }
         number.innerHTML = sidebarArr[i];
     });
-
-    
-
+    }
 }
 
 export default clientsSlider;

@@ -64,7 +64,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 function clientsSlider() {
-    const sidebarArr = ["01", "02", "03", "04"],
+    if (document.querySelector('.talent__item-wrapper')) {
+        const sidebarArr = ["01", "02", "03", "04"],
           carouselWrapper = document.querySelector('.talent__item-wrapper'),
           slideUp = document.querySelector('.talent__right-switch-up'),
           slideDown = document.querySelector('.talent__right-switch-down'),
@@ -101,9 +102,7 @@ function clientsSlider() {
         }
         number.innerHTML = sidebarArr[i];
     });
-
-    
-
+    }
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (clientsSlider);
@@ -183,24 +182,30 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function homepageTable() {
-    //get data from database
-    (0,_services_services__WEBPACK_IMPORTED_MODULE_0__.getResourse)('http://localhost:8000/clients')
-    .then(data => {
-        // randomize data
-        function shuffle(data) {
-            for (let i = data.length - 1; i > 0; i--) {
-                const a = Math.floor(Math.random() * (i + 1));
-                [data[i], data[a]] = [data[a], data[i]];
-            }
-        }
-        shuffle(data);
-        //create table item
-        data.forEach(({img1, name, profession, link}) => {
-            new _classes_tableItem__WEBPACK_IMPORTED_MODULE_1__["default"](img1, name, profession, link, ".table__wrapper").render();
-            (0,_elements_animationDelay__WEBPACK_IMPORTED_MODULE_2__["default"])('.table__item');
-        });
-    });
-    
+    if (document.querySelector('.table__wrapper')) {
+        //get data from database
+        (0,_services_services__WEBPACK_IMPORTED_MODULE_0__.getResourse)('http://localhost:8000/clients')
+            .then(data => {
+                // randomize data
+                function shuffle(data) {
+                    for (let i = data.length - 1; i > 0; i--) {
+                        const a = Math.floor(Math.random() * (i + 1));
+                        [data[i], data[a]] = [data[a], data[i]];
+                    }
+                }
+                shuffle(data);
+                //create table item
+                data.forEach(({
+                    img1,
+                    name,
+                    profession,
+                    link
+                }) => {
+                    new _classes_tableItem__WEBPACK_IMPORTED_MODULE_1__["default"](img1, name, profession, link, ".table__wrapper").render();
+                    (0,_elements_animationDelay__WEBPACK_IMPORTED_MODULE_2__["default"])('.table__item');
+                });
+            });
+    }
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (homepageTable);
@@ -218,53 +223,53 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 function profileSlider() {
-
-    const imagesArr = ["https://images.unsplash.com/photo-1516726817505-f5ed825624d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-    "https://images.unsplash.com/photo-1562572159-4efc207f5aff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
-    "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-    "https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"],
-          namesArr = ["Georgina Alson", "Kelia Sophy", "Anna Lionel", "Yan Preben"],
-          meritsArr = ["Young Model 2022", "Compositor", "Stand-up Comedian", "Actor"],
-          sidebarArr = ["01", "02", "03", "04"];
-    
-    const currentName = document.querySelector('#homepage_name'),
-          currentMerit = document.querySelector('#homepage_merit'),
-          currentImage = document.querySelector('#homepage_image'),
-          currentSidebarNumber = document.querySelector('#homepage__sidebar-number');
-
-    let i = 0;
-
-    setTimeout(flipAnim, 6700);
-
-    function flipAnim () {
-        currentName.classList.add('flip-anim');
-        currentMerit.classList.add('flip-anim');
-        currentImage.classList.add('flip-anim');
-    }
-
-    setInterval(() => {
-
-        i++;
-
-        if (i === 4) {
-            i = 0;
-        }
-
-        currentSidebarNumber.innerText = sidebarArr[i];
-        currentName.innerText = namesArr[i];
-        currentMerit.innerText = meritsArr[i];
-        currentImage.src = imagesArr[i];
+    if(document.querySelector('#homepage_name')) {
+        const imagesArr = ["https://images.unsplash.com/photo-1516726817505-f5ed825624d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "https://images.unsplash.com/photo-1562572159-4efc207f5aff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+        "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+        "https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"],
+              namesArr = ["Georgina Alson", "Kelia Sophy", "Anna Lionel", "Yan Preben"],
+              meritsArr = ["Young Model 2022", "Compositor", "Stand-up Comedian", "Actor"],
+              sidebarArr = ["01", "02", "03", "04"];
         
-        setTimeout(() => {
-            currentName.classList.remove('flip-anim');
-            currentMerit.classList.remove('flip-anim');
-            currentImage.classList.remove('flip-anim');
-        }, 1000);
-
-        setTimeout(flipAnim, 6700);
-                
-    }, 7000);
+        const currentName = document.querySelector('#homepage_name'),
+              currentMerit = document.querySelector('#homepage_merit'),
+              currentImage = document.querySelector('#homepage_image'),
+              currentSidebarNumber = document.querySelector('#homepage__sidebar-number');
     
+        let i = 0;
+    
+        setTimeout(flipAnim, 6700);
+    
+        function flipAnim () {
+            currentName.classList.add('flip-anim');
+            currentMerit.classList.add('flip-anim');
+            currentImage.classList.add('flip-anim');
+        }
+    
+        setInterval(() => {
+    
+            i++;
+    
+            if (i === 4) {
+                i = 0;
+            }
+    
+            currentSidebarNumber.innerText = sidebarArr[i];
+            currentName.innerText = namesArr[i];
+            currentMerit.innerText = meritsArr[i];
+            currentImage.src = imagesArr[i];
+            
+            setTimeout(() => {
+                currentName.classList.remove('flip-anim');
+                currentMerit.classList.remove('flip-anim');
+                currentImage.classList.remove('flip-anim');
+            }, 1000);
+    
+            setTimeout(flipAnim, 6700);
+                    
+        }, 7000);
+    }    
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (profileSlider);
@@ -441,15 +446,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 // import animationDelay from "./modules/elements/animationDelay";
 // import homepageTableItem from "./modules/classes/tableItem";
 
-(0,_modules_elements_offcanvasMenu__WEBPACK_IMPORTED_MODULE_0__["default"])();
-(0,_modules_homepage_profileSlider__WEBPACK_IMPORTED_MODULE_2__["default"])();
-(0,_modules_homepage_homepageTable__WEBPACK_IMPORTED_MODULE_1__["default"])();
-(0,_modules_homepage_sortingTableTabs__WEBPACK_IMPORTED_MODULE_3__["default"])();
-(0,_modules_clients_clientsSlider__WEBPACK_IMPORTED_MODULE_4__["default"])();
 
+
+window.addEventListener('DOMContentLoaded', function() {
+    (0,_modules_elements_offcanvasMenu__WEBPACK_IMPORTED_MODULE_0__["default"])();
+    (0,_modules_homepage_profileSlider__WEBPACK_IMPORTED_MODULE_2__["default"])();
+    (0,_modules_homepage_homepageTable__WEBPACK_IMPORTED_MODULE_1__["default"])();
+    (0,_modules_homepage_sortingTableTabs__WEBPACK_IMPORTED_MODULE_3__["default"])();
+    (0,_modules_clients_clientsSlider__WEBPACK_IMPORTED_MODULE_4__["default"])();
+});
 })();
 
 /******/ })()
