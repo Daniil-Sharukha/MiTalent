@@ -6,7 +6,6 @@
         position: absolute
         width: 40%
         height: 100%
-        // background-color: #e2e8e8
         background-color: #858585
         object-fit: cover
     &__contact
@@ -84,6 +83,13 @@
         span
             font-weight: bold
             font-style: italic
+    &__table
+        &-wrapper
+            grid-template-rows: repeat(1, 1fr)
+            margin-bottom: 60px
+            grid-auto-rows: 0
+            overflow: hidden
+
 @media ( max-width: 992px )
     .about
         &__contact
@@ -115,6 +121,11 @@
             margin-top: 40px
             height: 220px
             padding-top: 60px
+        &__table
+            &__tabs
+                margin: 0
+            &-wrapper
+                grid-template-rows: repeat(2, 1fr)
 @media ( max-width: 576px )
     .about
         &__promo
@@ -133,3 +144,6 @@
             height: 180px
             padding-top: 45px
             font-size: 18px
+        &__table
+            &-wrapper
+                grid-template-rows: repeat(4, 1fr)

@@ -1,120 +1,120 @@
-.carousel
-    position: relative
-    width: 90%
-    margin: 0 auto
-    margin-bottom: 130px
-    &-title
-        font-family: 'Poppins', sans-serif
-        font-size: 50px
-        line-height: 50px
-        text-align: center
-        color: #1a1a1d
-        margin-bottom: 40px
-    &-divider
-        width: 140px
-        height: 2px
-        background-color: #1a1a1d
-        margin: 0 auto
-        margin-bottom: 50px  
-    &__left
-        cursor: pointer
-        position: absolute
-        left: -40px
-        top: 47%
-    &__right
-        cursor: pointer
-        position: absolute
-        right: -40px
-        top: 47%
-    &__wrapper
-        display: flex
-        margin: 0 auto
-        max-width: 1680px
-        justify-content: center
-    &__item
-        position: relative
-        background-color: #000
-        &:hover
-            .carousel__item-profile
-                display: block
-            img
-                opacity: .4
-        img
-            max-width: 100.5%
-            height: 490px
-            object-fit: cover
-            transition: 0.3s all
-            opacity: 0.8
-        &-profile
-            display: none
-            position: absolute
-            top: 10px
-            right: 10px
-            width: 56px
-            height: 56px
-            background-color: #b4d3d3
-            border-radius: 50%
-            text-align: center
-            padding-top: 14px
-            svg
-                transform: rotate(45deg)
-                fill: #fff
-        &-name
-            cursor: default
-            position: absolute
-            bottom: 80px
-            left: 50%
-            transform: translateX(-50%)
-            font-family: 'Poppins', sans-serif
-            font-size: 30px
-            letter-spacing: 0.6px
-            text-align: center
-            color: #fff
-            font-weight: 400
-        &-job
-            position: absolute
-            bottom: 50px
-            left: 50%
-            transform: translateX(-50%)
-            font-family: 'Nunito Sans', sans-serif
-            font-size: 12px
-            font-weight: 800
-            letter-spacing: 2.4px
-            text-align: center
-            color: #aeaeb7
-            text-transform: uppercase
-@media ( max-width: 992px )
-    .carousel
-        width: 85%
-        &__item
-            &-name
-                font-size: 26px
-@media ( max-width: 768px )
-    .carousel
-        width: 100%
-        &__left
-            display: none
-        &__right
-            display: none
-        &__item
-            img
-                height: 400px
-            &-name
-                font-size: 18px
-            &-job
-                font-size: 10px
-@media ( max-width: 576px )
-    .carousel
-        margin-bottom: 90px
-        &-title
-            font-size: 35px
-        &__item
-            &:first-child
-                display: none
-            &-profile
-                width: 35px
-                height: 35px
-                padding-top: 5px
+// .carousel
+//     position: relative
+//     width: 90%
+//     margin: 0 auto
+//     margin-bottom: 130px
+//     &-title
+//         font-family: 'Poppins', sans-serif
+//         font-size: 50px
+//         line-height: 50px
+//         text-align: center
+//         color: #1a1a1d
+//         margin-bottom: 40px
+//     &-divider
+//         width: 140px
+//         height: 2px
+//         background-color: #1a1a1d
+//         margin: 0 auto
+//         margin-bottom: 50px  
+//     &__left
+//         cursor: pointer
+//         position: absolute
+//         left: -40px
+//         top: 47%
+//     &__right
+//         cursor: pointer
+//         position: absolute
+//         right: -40px
+//         top: 47%
+//     &__wrapper
+//         display: flex
+//         margin: 0 auto
+//         max-width: 1680px
+//         justify-content: center
+//     &__item
+//         position: relative
+//         background-color: #000
+//         &:hover
+//             .carousel__item-profile
+//                 display: block
+//             img
+//                 opacity: .4
+//         img
+//             max-width: 100.5%
+//             height: 490px
+//             object-fit: cover
+//             transition: 0.3s all
+//             opacity: 0.8
+//         &-profile
+//             display: none
+//             position: absolute
+//             top: 10px
+//             right: 10px
+//             width: 56px
+//             height: 56px
+//             background-color: #b4d3d3
+//             border-radius: 50%
+//             text-align: center
+//             padding-top: 14px
+//             svg
+//                 transform: rotate(45deg)
+//                 fill: #fff
+//         &-name
+//             cursor: default
+//             position: absolute
+//             bottom: 80px
+//             left: 50%
+//             transform: translateX(-50%)
+//             font-family: 'Poppins', sans-serif
+//             font-size: 30px
+//             letter-spacing: 0.6px
+//             text-align: center
+//             color: #fff
+//             font-weight: 400
+//         &-job
+//             position: absolute
+//             bottom: 50px
+//             left: 50%
+//             transform: translateX(-50%)
+//             font-family: 'Nunito Sans', sans-serif
+//             font-size: 12px
+//             font-weight: 800
+//             letter-spacing: 2.4px
+//             text-align: center
+//             color: #aeaeb7
+//             text-transform: uppercase
+// @media ( max-width: 992px )
+//     .carousel
+//         width: 85%
+//         &__item
+//             &-name
+//                 font-size: 26px
+// @media ( max-width: 768px )
+//     .carousel
+//         width: 100%
+//         &__left
+//             display: none
+//         &__right
+//             display: none
+//         &__item
+//             img
+//                 height: 400px
+//             &-name
+//                 font-size: 18px
+//             &-job
+//                 font-size: 10px
+// @media ( max-width: 576px )
+//     .carousel
+//         margin-bottom: 90px
+//         &-title
+//             font-size: 35px
+//         &__item
+//             &:first-child
+//                 display: none
+//             &-profile
+//                 width: 35px
+//                 height: 35px
+//                 padding-top: 5px
                 
             
 

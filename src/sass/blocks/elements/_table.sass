@@ -4,8 +4,10 @@
     &__header
         display: flex
         justify-content: space-between
-        margin-bottom: 80px
+        margin-bottom: 30px
+        min-height: 60px
     &__tabs
+        margin: 0 auto
         ul
             display: flex
             width: 440px
@@ -19,6 +21,7 @@
         letter-spacing: 2px
         color: #696970
         transition: .3s all
+        margin: 10px 20px
         &:hover
             border-bottom: 1px #000 solid
             font-size: 14px
@@ -29,7 +32,7 @@
             font-size: 14px
             color: #000
     &__switch
-        display: flex
+        display: none
         width: 100px
         justify-content: space-around
         opacity: 0
@@ -129,6 +132,6 @@
                 flex-wrap: wrap
         &__tab
             font-size: 15px
-            margin: 5px 0
+            margin: 5px 20px
         &__wrapper
             grid-template-columns: repeat(1, 1fr)

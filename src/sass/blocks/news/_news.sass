@@ -32,9 +32,12 @@
             text-decoration: none
             .news__item-title
                 color: #87bbbc
+            .news__item-preview img
+                opacity: .8
         &-preview
             width: 100%
             margin-bottom: 30px
+            background-color: #000
             &-placeholder
                 width: 100%
                 height: 100%
@@ -43,6 +46,7 @@
                 width: 100%
                 height: 100%
                 object-fit: cover
+                transition: .3s all
         &-title
             font-family: 'Poppins', sans-serif
             font-size: 21px
@@ -73,25 +77,20 @@
             line-height: 50px
         &-sm
             display: flex
-            // width: 450px
             &-block
-                // width: 450px
                 width: 100%
                 display: grid
                 row-gap: 60px
             .news__item
                 &-preview
-                    // width: 180px
                     width: 45%
                     height: 140px
                     margin-bottom: 0
                     margin-right: 40px
                 &-descr
-                    // max-width: 230px
                     width: 55%
         &-lg
             &-v
-                // width: 450px
                 .news__item
                     &-preview
                         height: 600px
@@ -100,17 +99,34 @@
                         max-width: 450px
             &-h
                 grid-column: 1/3
-                // width: 950px
                 width: 100%
                 .news__item
                     &-preview
                         height: 530px
         &-md
-            // width: 450px
             width: 100%
             .news__item
                 &-preview
                     height: 315px
+    &__clients
+        &-title
+            font-family: 'Poppins', sans-serif
+            font-size: 50px
+            line-height: 50px
+            text-align: center
+            color: #1a1a1d
+            margin-bottom: 40px
+        &-divider
+            width: 140px
+            height: 2px
+            background-color: #1a1a1d
+            margin: 0 auto
+            margin-bottom: 50px 
+    &__table
+        &-wrapper
+            grid-template-rows: repeat(1, 1fr)
+            overflow: hidden
+            grid-auto-rows: 0
 @media ( max-width: 768px )
     .news
         &__content
@@ -142,6 +158,9 @@
             &-md
                 .news__item-preview
                     height: 200px
+        &__table
+            &-wrapper
+                grid-template-rows: repeat(2, 1fr)
 @media ( max-width: 576px )
     .news
         padding: 150px 0 60px
@@ -165,10 +184,9 @@
                     grid-column: 1/2
                 &-h
                     grid-column: 1/2
-
-                
-
-
-
-
-
+        &__clients
+            &-title
+                font-size: 35px
+        &__table
+            &-wrapper
+                grid-template-rows: repeat(4, 1fr)
