@@ -1,28 +1,109 @@
-.flip-anim 
-	animation: flip-anim .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+// .flip-anim 
+// 	animation: flip-anim .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
 
-@keyframes flip-anim
-	0% 
-		transform: translateY(0) rotateX(0)
-		transform-origin: 50% 0%
+// @keyframes flip-anim
+// 	0% 
+// 		transform: translateY(0) rotateX(0)
+// 		transform-origin: 50% 0%
 
-	50% 
-		transform: translateY(-50%) rotateX(-90deg)
-		transform-origin: 50% 60%
+// 	50% 
+// 		transform: translateY(-50%) rotateX(-90deg)
+// 		transform-origin: 50% 60%
 	
-	100% 
-		transform: translateY(0) rotateX(0)
-		transform-origin: 50% 0%
+// 	100% 
+// 		transform: translateY(0) rotateX(0)
+// 		transform-origin: 50% 0%
   
-.fade-in-bottom 
-	animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+// .flip-anim 
+// 	-webkit-animation: flip-anim 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
+// 	animation: flip-anim 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
 
-@keyframes fade-in-bottom
-	0%
-		transform: translateY(50px)
+
+// @-webkit-keyframes flip-anim 
+// 	0% 
+// 		-webkit-transform: translateY(0) rotateX(0)
+// 		transform: translateY(0) rotateX(0)
+// 		-webkit-transform-origin: 50% 0%
+// 		transform-origin: 50% 0%
+// 	50%
+// 		-webkit-transform: translateY(-50%) rotateX(-90deg)
+// 		transform: translateY(-50%) rotateX(-90deg)
+// 		-webkit-transform-origin: 50% 60%
+// 		transform-origin: 50% 60%
+// 	100% 
+// 		-webkit-transform: translateY(0) rotateX(0)
+// 		transform: translateY(0) rotateX(0)
+// 		-webkit-transform-origin: 50% 0%
+// 		transform-origin: 50% 0%
+  
+
+// @keyframes flip-anim 
+// 	0% 
+// 		-webkit-transform: translateY(0) rotateX(0)
+// 		transform: translateY(0) rotateX(0)
+// 		-webkit-transform-origin: 50% 0%
+// 		transform-origin: 50% 0%
+// 	50%
+// 		-webkit-transform: translateY(-50%) rotateX(-90deg)
+// 		transform: translateY(-50%) rotateX(-90deg)
+// 		-webkit-transform-origin: 50% 60%
+// 		transform-origin: 50% 60%
+// 	100% 
+// 		-webkit-transform: translateY(0) rotateX(0)
+// 		transform: translateY(0) rotateX(0)
+// 		-webkit-transform-origin: 50% 0%
+// 		transform-origin: 50% 0%
+
+.flip-anim
+	-webkit-animation: flip-anim 0.7s ease-out both
+	animation: flip-anim 0.7s ease-out both
+
+  
+@-webkit-keyframes flip-anim
+	0% 
+		opacity: 1
+	50% 
 		opacity: 0
-	100% 
-		transform: translateY(0)
+	100%
 		opacity: 1
   
 
+@keyframes flip-anim
+	0% 
+		opacity: 1
+	50% 
+		opacity: 0
+	100%
+		opacity: 1
+  
+
+
+
+
+
+
+
+
+.fade-in-bottom
+	-webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+	animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+
+@-webkit-keyframes fade-in-bottom
+	0%
+		-webkit-transform: translateY(50px)
+		transform: translateY(50px)
+		opacity: 0
+	100% 
+		-webkit-transform: translateY(0)
+		transform: translateY(0)
+		opacity: 1
+
+@keyframes fade-in-bottom
+	0%
+		-webkit-transform: translateY(50px)
+		transform: translateY(50px)
+		opacity: 0
+	100% 
+		-webkit-transform: translateY(0)
+		transform: translateY(0)
+		opacity: 1
