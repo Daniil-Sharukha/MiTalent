@@ -184,7 +184,7 @@ __webpack_require__.r(__webpack_exports__);
 function homepageTable() {
     if (document.querySelector('.table__wrapper')) {
         //get data from database
-        (0,_services_services__WEBPACK_IMPORTED_MODULE_0__.getResourse)('http://localhost:8000/clients')
+        (0,_services_services__WEBPACK_IMPORTED_MODULE_0__.getResourse)('https://my-json-server.typicode.com/Daniil-Sharukha/MiTalent-db/clients')
             .then(data => {
                 // randomize data
                 function shuffle(data) {
@@ -318,7 +318,7 @@ function sortingTableItems() {
                     item.remove();
                 });
     
-                (0,_services_services__WEBPACK_IMPORTED_MODULE_0__.getResourse)('http://localhost:8000/clients')
+                (0,_services_services__WEBPACK_IMPORTED_MODULE_0__.getResourse)('https://my-json-server.typicode.com/Daniil-Sharukha/MiTalent-db/clients')
                 .then(data => {
                     let arr = [];
                     data.forEach(obj => {

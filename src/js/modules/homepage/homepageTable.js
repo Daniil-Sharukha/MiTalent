@@ -5,7 +5,7 @@ import animationDelay from "../elements/animationDelay";
 function homepageTable() {
     if (document.querySelector('.table__wrapper')) {
         //get data from database
-        getResourse('http://localhost:8000/clients')
+        getResourse('https://my-json-server.typicode.com/Daniil-Sharukha/MiTalent-db/clients')
             .then(data => {
                 // randomize data
                 function shuffle(data) {
