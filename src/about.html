@@ -44,6 +44,23 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div class="modal__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg>
+                </div>
+                <div class="modal__cog">
+                    <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" width="64px" height="64px" viewBox="0 0 128 128" xml:space="preserve"><g><path fill="#000000" d="M116.7 66.28a52.86 52.86 0 0 1-1 8.18l9.8 7.57-1.78 4.67-1.77 4.67-12.36-.82a52.87 52.87 0 0 1-4.7 6.7L110 108.5l-3.75 3.3-3.75 3.32L92 108.67a52.6 52.6 0 0 1-7.45 3.9l-.66 12.3-4.87 1.2-4.86 1.2-6.38-10.66q-1.9.2-3.88.2-2.15 0-4.25-.14l-6.3 10.64-4.84-1.2-4.85-1.2-.7-12.43a52.6 52.6 0 0 1-6.7-3.5l-10.6 6.64-3.75-3.3-3.76-3.3 5.05-11.4a52.88 52.88 0 0 1-4.73-6.73l-12.34.9-1.8-4.66-1.8-4.67 9.7-7.67a52.8 52.8 0 0 1-1-8.05l-11.4-5 .56-4.95.54-4.97 12.26-2.3a52.37 52.37 0 0 1 2.94-7.83L8.4 32l2.8-4.14 2.8-4.14 12 3.68a53.06 53.06 0 0 1 6-5.33L29.57 9.8l4.4-2.37 4.43-2.35 8.95 8.86a52.4 52.4 0 0 1 8-1.98L59 0h10l3.66 11.96a52.4 52.4 0 0 1 7.8 1.9L89.26 5l4.42 2.3 4.43 2.34-2.3 12.27a52.98 52.98 0 0 1 6.2 5.5l11.9-3.7 2.9 4.1 2.84 4.1-7.8 9.8a52.34 52.34 0 0 1 2.86 7.5l12.3 2.17.6 4.96.57 4.95zM41 64a23 23 0 1 0 23-23 23 23 0 0 0-23 23z"/><animateTransform attributeName="transform" type="rotate" from="0 64 64" to="27.69 64 64" dur="300ms" repeatCount="indefinite"></animateTransform></g></svg>
+                </div>
+                <div class="modal__title">Oops...</div>
+                <div class="modal__descr">Sorry, but the sections with profile view and detailed news view are in development and will be ready soon :)</div>
+                <button class="modal__btn">Okay</button>
+            </div>
+        </div>
+    </div>
+
     <nav class="sidebar">
         <div class="sidebar__social">
             <div class="sidebar__icon">
@@ -118,7 +135,7 @@
             <div class="about__photo">
                 <img src="img/placeholders/img_1.jpg" class="about__img" alt="#">
                 
-                <a href="https://goo.gl/maps/RhXaXdMbPwCTRjLw5" class="btn btn__about">
+                <a href="contacts.html" class="btn btn__about">
                     <div class="btn-text">contact us</div>
                     <div class="btn-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M272 304h-96C78.8 304 0 382.8 0 480c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32C448 382.8 369.2 304 272 304zM48.99 464C56.89 400.9 110.8 352 176 352h96c65.16 0 119.1 48.95 127 112H48.99zM224 256c70.69 0 128-57.31 128-128c0-70.69-57.31-128-128-128S96 57.31 96 128C96 198.7 153.3 256 224 256zM224 48c44.11 0 80 35.89 80 80c0 44.11-35.89 80-80 80S144 172.1 144 128C144 83.89 179.9 48 224 48z"/></svg>
@@ -174,7 +191,7 @@
             </div>
 
             <div class="footer__newsletter">
-                <div class="footer__signUp"><a href="#">
+                <div class="footer__signUp"><a href="https://www.google.com/gmail/about/">
                     sign up our newsletter
                 </a></div>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>

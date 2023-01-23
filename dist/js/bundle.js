@@ -134,6 +134,106 @@ function animationDelay(itemClass) {
 
 /***/ }),
 
+/***/ "./src/js/modules/elements/modal.js":
+/*!******************************************!*\
+  !*** ./src/js/modules/elements/modal.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function toggleModal() {
+    setTimeout(() => {
+        const homepageNewsLinks = document.querySelectorAll('.homepage__news__item-link'),
+              clientsNewsLinks = document.querySelectorAll('.news__preview-item'),
+              newsLink = document.querySelectorAll('.news__item'),
+              homepageBtn = document.querySelector('.homepage__promo__btn'),
+              modal = document.querySelector('.modal');
+        let profileLinks = document.querySelectorAll('.table__item-link');
+
+        function modalOpen() {
+
+            function addModalActive(link) {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    modal.classList.add('modal-active');
+                    document.body.style.overflow = 'hidden';
+                });
+            }
+
+            document.addEventListener('click', function(e) {
+                if (e.target.className == 'table__tab' || 'table__tab table__tab-active') {
+                    setTimeout(() => {
+                        profileLinks = document.querySelectorAll('.table__item-link');
+                        profileLinks.forEach(link => {
+                            addModalActive(link);
+                        });
+                    }, 1000);     
+                }
+            });
+
+            profileLinks.forEach(link => {
+                addModalActive(link);
+            });
+
+            homepageNewsLinks.forEach(link => {
+                addModalActive(link);
+            });
+
+            clientsNewsLinks.forEach(link => {
+                addModalActive(link);
+            });
+
+            newsLink.forEach(link => {
+                addModalActive(link);
+            });
+
+            if(homepageBtn) {
+                homepageBtn.addEventListener('click', (event) => {
+                event.preventDefault();
+                modal.classList.add('modal-active');
+                document.body.style.overflow = 'hidden';
+                });
+            }
+        }
+
+        function modalClose() {
+            const modalExit = document.querySelector('.modal__close'),
+                  modalBtn = document.querySelector('.modal__btn');
+                
+            modalExit.addEventListener('click', () => {
+                modal.classList.remove('modal-active');
+                document.body.style.overflow = '';
+            });
+    
+            modalBtn.addEventListener('click', () => {
+                modal.classList.remove('modal-active');
+                document.body.style.overflow = '';
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if(e.code === 'Escape') {
+                    modal.classList.remove('modal-active');
+                document.body.style.overflow = '';
+                }
+            });
+        }
+
+        modalOpen();
+        modalClose();
+    }, 1000);
+
+    
+
+    
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (toggleModal);
+
+/***/ }),
+
 /***/ "./src/js/modules/elements/offcanvasMenu.js":
 /*!**************************************************!*\
   !*** ./src/js/modules/elements/offcanvasMenu.js ***!
@@ -334,10 +434,6 @@ function sortingTableItems() {
                                     
                 });
             }
-
-            
-
-
         })
     );
 }
@@ -440,6 +536,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_homepage_profileSlider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/homepage/profileSlider */ "./src/js/modules/homepage/profileSlider.js");
 /* harmony import */ var _modules_homepage_sortingTableTabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/homepage/sortingTableTabs */ "./src/js/modules/homepage/sortingTableTabs.js");
 /* harmony import */ var _modules_clients_clientsSlider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/clients/clientsSlider */ "./src/js/modules/clients/clientsSlider.js");
+/* harmony import */ var _modules_elements_modal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/elements/modal */ "./src/js/modules/elements/modal.js");
 
 
 
@@ -458,6 +555,7 @@ window.addEventListener('DOMContentLoaded', function() {
     (0,_modules_homepage_homepageTable__WEBPACK_IMPORTED_MODULE_1__["default"])();
     (0,_modules_homepage_sortingTableTabs__WEBPACK_IMPORTED_MODULE_3__["default"])();
     (0,_modules_clients_clientsSlider__WEBPACK_IMPORTED_MODULE_4__["default"])();
+    (0,_modules_elements_modal__WEBPACK_IMPORTED_MODULE_5__["default"])();
 });
 })();
 
